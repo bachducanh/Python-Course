@@ -1,0 +1,30 @@
+.custom-accordion .card-header {
+  background-color: #00568f;
+  color: #fff;
+}
+.custom-accordion .card-header .btn {
+  color: #fff;
+  text-align: left;
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1em;
+  position: relative;
+}
+.custom-accordion .card-header .btn:hover {
+  text-decoration: none;
+}
+.custom-accordion .card-header .btn:after {
+  content: "\f107"; /* Font Awesome down arrow */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.2s;
+}
+.custom-accordion .card-header .btn.collapsed:after {
+  transform: rotate(-90deg);
+}
+.custom-accordion .card-body {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
